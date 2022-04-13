@@ -6,7 +6,7 @@
 
 .home img {
   margin: 100px auto 20px auto;
-  width: 320px;
+  width: 300px;
 }
 .home h1 {
   width: 60%;
@@ -74,14 +74,14 @@
 }
 .options_boxes .option_box {
   width: 38%;
-  height: 100%;
   max-width: 320px;
   border: solid 1px rgb(104, 107, 107);
   margin: 20px;
 }
 .options_boxes .option_box img {
   width: 100%;
-  height: 100px;
+  height: 80%;
+  box-sizing: border-box;
   background-color: aqua;
 }
 .options_boxes .option_box p {
@@ -131,7 +131,7 @@
 
 .icons {
   width: 40%;
-  margin: 30px auto 0 auto;
+  margin: 30px auto 100px auto;
   display: flex;
   justify-content: space-around;
 }
@@ -139,7 +139,10 @@
   width: 3em;
 }
 
-@media screen and (min-width: 1024px) {
+@media (min-width: 1024px) {
+  .home img {
+    margin-top: 50px;
+  }
   .home h1 {
     font-size: 35px;
   }
@@ -150,24 +153,33 @@
     width: 30%;
   }
 
+  .options_boxes {
+    flex-wrap: nowrap;
+  }
+
   .option_box {
     width: 40%;
     height: 350px;
     margin-bottom: 2%;
     min-height: 250px;
   }
-
   .option_box img {
-    height: 150px;
+    height: 300px;
+    box-sizing: border-box;
   }
 
   .option_box p {
     font-size: 25px;
   }
+
+  .icons {
+    width: 20%;
+  }
 }
-@media screen and (min-width: 700px) {
+@media (min-width: 700px) {
   .home button {
     width: 30%;
+    margin-bottom: 100px;
   }
 }
 
